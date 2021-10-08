@@ -1,5 +1,7 @@
-﻿Species,Strongyles,Oxeas,Acanthoxeas,Styles,Subtylostyles,Tylotes,Acanthostyles,Tornotes,Uncinates,Clavule,Strongyloscopule,Tylostyle,Smooth Oxeate,Acantho Oxeate,2nd Tylostyle,2nd Subtylostyle,2nd Style
-Tethytimea tylota,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
-Rhabdastrella distincta,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Amphimedon anastomosa,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Asbestopluma hypogea,0,0,0,1?,1?,0,0,0,0,0,0,0,0,0,0,1?,1?
+﻿Species,Strongyles,Oxeas,Acanthoxeas,Styles,Subtylostyles,Tylotes,Acanthostyles,Tornotes,Uncinates,Clavule,Strongyloscopule,Tylostyle,Smooth Oxeate,Acantho Oxeate,"Triactines, regular, sharp tips","Triactines, sagittal, sharp tips","Tetractines, regular, sharp tips","Tetractines, sagittal, sharp tips",2nd Tylostyle,2nd Subtylostyle,2nd Style
+Tethytimea tylota,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0
+Rhabdastrella distincta,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amphimedon anastomosa,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asbestopluma hypogea,0,0,0,1?,1?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1?,1?
+Ascandra spalatensis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0
+Clathrina primordialis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
