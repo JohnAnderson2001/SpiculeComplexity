@@ -1,7 +1,10 @@
-﻿Species,Strongyles,Oxeas,Acanthoxeas,Styles,Subtylostyles,Tylotes,Acanthostyles,Tornotes,Uncinates,Clavule,Strongyloscopule,Tylostyle,Smooth Oxeate,Acantho Oxeate,"Triactines, regular, sharp tips","Triactines, sagittal, sharp tips","Tetractines, regular, sharp tips","Tetractines, sagittal, sharp tips",2nd Tylostyle,2nd Subtylostyle,2nd Style
-Tethytimea tylota,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0
-Rhabdastrella distincta,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Amphimedon anastomosa,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Asbestopluma hypogea,0,0,0,1?,1?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1?,1?
-Ascandra spalatensis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0
-Clathrina primordialis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+﻿Species,Strongyles,Oxeas,Acanthoxeas,Styles,Subtylostyles,Tylotes,Acanthostyles,Tornotes,Uncinates,Clavule,Strongyloscopule,Tylostyle,Smooth Oxeate,Acantho Oxeate,"Triactines, regular, sharp tips","Triactines, sagittal, sharp tips","Tetractines, regular, sharp tips","Tetractines, sagittal, sharp tips","Tetractines, regular, spined apex","Tripods (regular, sharp tips)","Tripods (sagittal, sharp tips)",Pentactins,Hexactins (regular),Hexactins (Irregular),2nd Tylostyle,2nd Subtylostyle,2nd Style
+Tethytimea tylota,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Rhabdastrella distincta,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amphimedon anastomosa,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asbestopluma hypogea,0,0,0,1?,1?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1?,1?
+Ascandra spalatensis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0
+Clathrina primordialis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Borojevia croatica,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,0
+Farrea bowerbanki,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Tretodictyum reiswigi,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
