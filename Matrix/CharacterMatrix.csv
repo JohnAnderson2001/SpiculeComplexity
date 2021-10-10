@@ -1,10 +1,13 @@
-﻿Species,Strongyles,Oxeas,Acanthoxeas,Styles,Subtylostyles,Tylotes,Acanthostyles,Tornotes,Uncinates,Clavule,Strongyloscopule,Tylostyle,Smooth Oxeate,Acantho Oxeate,"Triactines, regular, sharp tips","Triactines, sagittal, sharp tips","Tetractines, regular, sharp tips","Tetractines, sagittal, sharp tips","Tetractines, regular, spined apex","Tripods (regular, sharp tips)","Tripods (sagittal, sharp tips)",Pentactins,Hexactins (regular),Hexactins (Irregular),2nd Tylostyle,2nd Subtylostyle,2nd Style
-Tethytimea tylota,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
-Rhabdastrella distincta,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Amphimedon anastomosa,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Asbestopluma hypogea,0,0,0,1?,1?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1?,1?
-Ascandra spalatensis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0
-Clathrina primordialis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Borojevia croatica,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,0
-Farrea bowerbanki,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-Tretodictyum reiswigi,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+﻿Species,Strongyles,Oxeas,Acanthoxeas,Styles,Subtylostyles,Tylotes,Acanthostyles,Tornotes,Uncinates,Clavule,Strongyloscopule,Tylostyle,Smooth Oxeate,Acantho Oxeate,Undefined Monaxon,"Triactines, regular, sharp tips","Triactines, sagittal, sharp tips","Triactines (sagittal, blunt, curved)",Giant Triactines (sagittal),"Tetractines, regular, sharp tips","Tetractines, sagittal, sharp tips","Tetractines, sagittal, curved, sharp","Tetractines, regular, spined apex","Tripods (regular, sharp tips)","Tripods (sagittal, sharp tips)",Pentactins,Hexactins (regular),Hexactins (Irregular),"Acanthohexactins, regular",2nd Tylostyle,2nd Subtylostyle,2nd Style,2nd acanthostyle,"2nd sagittal triactines, blunt","2nd Hexactins, regular","2nd Acanthohexactins, regular",Pairing
+Tethytimea tylota,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Rhabdastrella distincta,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amphimedon anastomosa,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asbestopluma hypogea,0,0,0,1?,1?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1?,1?,0,0,0,0,0
+Ascandra spalatensis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Clathrina primordialis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Borojevia croatica,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+Farrea bowerbanki,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Tretodictyum reiswigi,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+Haljalaspongia inaudita,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0
+Leucandra falakra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1
+Hymedesmia anatoliensis,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
