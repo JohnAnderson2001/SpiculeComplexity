@@ -4,5 +4,12 @@ FixNames <- function(reduced, cid) {
 # clean the names
 	scientific_names <- gsub('\\.', '', scientific_names)
 	scientific_names <- gsub('\\s+', '_', scientific_names)
+	sids <- reduced@clstrs[[cid]]@sids
+	
+}
 
+RunPhylotaR <- function(wd, txid, ncbi_dr) {
+	phylotaR::setup(wd = wd, txid = txid, ncbi_dr = ncbi_dr)
+	phylotaR::run(wd = wd)
+	return(phylotaR::read_phylota(wd))
 }

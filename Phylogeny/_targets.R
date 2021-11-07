@@ -1,13 +1,12 @@
 library(targets)
+source("functions.R")
 tar_option_set(packages=c("phylotaR", "ape"))
 
 list(
- tar_target(wd, getwd()),
+ tar_target(wd, file.path(getwd(), 'sponges')),
  tar_target(ncbi_dr, '/usr/local/bin/'),
  tar_target(txid, 6040), # Porifera
- tar_target(do_phylotar_setup, phylotaR::setup(wd = wd, txid = txid, ncbi_dr = ncbi_dr)),
- tar_target(do_phylotar_run, phylotaR::run(wd = wd)),
- tar_target(all_clusters, phylotaR::read_phylota(wd)),
+ tar_target(all_clusters, RunPhylotaR(wd=wd, txid=txid, ncbi_dr=ncbi_dr)),
  tar_target(cids, all_clusters@cids),
  tar_target(n_taxa, phylotaR::get_ntaxa(phylota = all_clusters, cid = cids)),
  tar_target(keep, cids[n_taxa >= 10]),
