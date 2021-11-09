@@ -1,6 +1,6 @@
 library(targets)
 source("functions.R")
-tar_option_set(packages=c("phylotaR", "ape"))
+tar_option_set(packages=c("phylotaR", "ape", "Biostrings", "apex"))
 
 list(
  tar_target(wd, file.path(getwd(), 'sponges')),
@@ -15,5 +15,9 @@ list(
  tar_target(save_genes, SaveGenes(reduced)),
  tar_target(process_genes, ProcessSequencesByGeneSingle(save_genes)),
  tar_target(gaps_removed, RemoveGappy(process_genes)),
- tar_target(concatenate_all, ConcatenateAll(gaps_removed))
+ tar_target(dna_combined, apex::read.multiFASTA(gaps_removed)
+ ),
+ tar_target(concatenate_all, ConcatenateAll(dna_combined)),
+ tar_target(partitions, CreatePartitionFile(dna_combined)),
+ tar_target(raxmlrun, RunRaxml(concatenate_all, partitions))
 )

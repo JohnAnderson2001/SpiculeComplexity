@@ -32,7 +32,7 @@ SaveGenes <- function(reduced) {
 			try(sids_products[focal_sid] <- ape::getAnnotationsGenBank(sids_samples[focal_sid])$product)
 		}
 		gene_name <- gsub(" ", "_", names(table(tolower(sids_products)))[1])
-		good_names <- which(!grepl("_(sp|cf)_", scientific_names))
+		good_names <- which(!grepl("_(sp|cf|aff)_", scientific_names))
 		if(length(good_names)>9) {
 			write_sqs(phylota = reduced, sid = sids[good_names], sq_nm = scientific_names[good_names], outfile = file.path("seqs_raw", paste0("Cluster_", cid, "_Ntax_", length(scientific_names[good_names]), "_Gene_", gene_name, ".fasta")))
 		}
@@ -89,7 +89,7 @@ ProcessSequencesByGeneSingle <- function(inputs) {
 RemoveGappy <- function(inputs) {
 	#inputs <- list.files(path="seqs_processed", pattern="Aligned.*.fasta")
 	for (i in seq_along(inputs)) {
-		dna <- 	readDNAMultipleAlignment(paste0("seqs_processed/", inputs[i]))
+		dna <- 	Biostrings::readDNAMultipleAlignment(paste0("seqs_processed/", inputs[i]))
 		min.fraction <- min(0.75,1-6/nrow(dna))
 		autoMasked <- maskGaps(dna, min.fraction=min.fraction, min.block.width=1)
 		writeXStringSet(as(autoMasked, "DNAStringSet"),file=paste0("seqs_gappy_removed/", inputs[i]))
@@ -98,8 +98,40 @@ RemoveGappy <- function(inputs) {
 	return(outputs)
 }
 
-ConcatenateAll <- function(inputs) {
-	dna_combined <- apex::read.multiFASTA(inputs)
-	phangorn::write.phyDat(concatenate(dna_combined), file='seqs_final/combined.nexus')
+ConcatenateAll <- function(dna_combined) {
+	phangorn::write.phyDat(concatenate(dna_combined), file='seqs_final/combined.seq')
 	
+}
+
+CreatePartitionFile <- function(dna_combined) {
+	genenames <- names(dna_combined@dna)
+	nsites <- unlist(lapply(dna_combined@dna, ncol))	
+	starting_site <- rep(NA, length(nsites))
+	starting_site[1] <- 1
+	ending_site <- rep(NA, length(nsites))
+	ending_site[1] <- nsites[1]
+	for (i in 2:length(nsites)) {
+		starting_site[i] <- sum(nsites[1:(i-1)])+1
+		ending_site[i] <- starting_site[i]+nsites[i]-1
+	}
+	gene_bounds <- paste0(starting_site, "-" , ending_site)
+	is_16S <- grepl("16s", genenames)
+	is_18S <- grepl("18s", genenames)
+	is_28S <- grepl("28s", genenames)
+	is_COI <- grepl("oxidase", genenames)
+	is_nonfocal <- ((is_16S+is_18S+is_28S+is_COI)!=1)
+	cat(paste0(
+		"DNA, 16S = ", paste(gene_bounds[is_16S], collapse=", "), "\n"
+		,"DNA, 18S = ", paste(gene_bounds[is_18S], collapse=", "), "\n"
+		,"DNA, 28S = ", paste(gene_bounds[is_28S], collapse=", "), "\n"
+		,"DNA, COI = ", paste(gene_bounds[is_COI], collapse=", "), "\n"
+		,"DNA, othergenes = ", paste(gene_bounds[is_nonfocal], collapse=", "), "\n"
+		), 
+		file='seqs_final/partition.txt')
+		return(c("partition.txt"))
+}
+
+RunRaxml <- function(...) {
+	setwd("seqs_final")
+	system('raxmlHPC -T 4 -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 -s combined.seq -q partition.txt -n combined')
 }
