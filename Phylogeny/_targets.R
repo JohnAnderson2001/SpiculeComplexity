@@ -11,5 +11,9 @@ list(
  tar_target(n_taxa, phylotaR::get_ntaxa(phylota = all_clusters, cid = cids)),
  tar_target(keep, cids[n_taxa >= 10]),
  tar_target(selected, phylotaR::drop_clstrs(phylota = all_clusters, cid = keep)),
- tar_target(reduced, phylotaR::drop_by_rank(phylota = selected, rnk = 'species', n = 1))
+ tar_target(reduced, phylotaR::drop_by_rank(phylota = selected, rnk = 'species', n = 1)),
+ tar_target(save_genes, SaveGenes(reduced)),
+ tar_target(process_genes, ProcessSequencesByGeneSingle(save_genes)),
+ tar_target(gaps_removed, RemoveGappy(process_genes)),
+ tar_target(concatenate_all, ConcatenateAll(gaps_removed))
 )
