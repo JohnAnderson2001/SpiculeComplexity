@@ -78,15 +78,25 @@ ProcessSequencesByGeneConcat <- function(inputs) {
 
 
 ProcessSequencesByGeneSingle <- function(inputs) {
+	mtDNA <- c()
+	system("rm seqs_processed/*.fasta")
 	for (i in seq_along(inputs)) {
-		
-		system(paste0('mafft --auto seqs_raw/', inputs[i], ' > seqs_processed/Aligned_', inputs[i]))
+		if(!grepl("(oxidase|16s)", inputs[i])) {
+			system(paste0('mafft --adjustdirectionaccurately --auto seqs_raw/', inputs[i], ' > seqs_processed/Aligned_', inputs[i]))
+		} else {
+		  mtDNA <- c(mtDNA, inputs[i])
+		}
 	}
+	system2("cat", args = paste("seqs_direct_download/spongemtgenomes.fasta", mtDNA), stdout = "seqs_raw/Concat_mtDNA.fasta")
+	system(paste0('mafft --adjustdirectionaccurately --auto seqs_raw/Concat_mtDNA.fasta > seqs_processed/Aligned_mtDNA.fasta'))
+
+
 	outputs <- list.files(path="seqs_processed", pattern="Aligned.*.fasta")
 	return(outputs)
 }
 
 RemoveGappy <- function(inputs) {
+	system("rm seqs_gappy_removed/*.fasta")
 	#inputs <- list.files(path="seqs_processed", pattern="Aligned.*.fasta")
 	for (i in seq_along(inputs)) {
 		dna <- 	Biostrings::readDNAMultipleAlignment(paste0("seqs_processed/", inputs[i]))
@@ -119,12 +129,12 @@ CreatePartitionFile <- function(dna_combined) {
 	is_18S <- grepl("18s", genenames)
 	is_28S <- grepl("28s", genenames)
 	is_COI <- grepl("oxidase", genenames)
-	is_nonfocal <- ((is_16S+is_18S+is_28S+is_COI)!=1)
+	is_mt <- grepl("mtDNA", genenames)
+	is_nonfocal <- ((is_16S+is_18S+is_28S+is_COI+is_mt)!=1)
 	cat(paste0(
-		"DNA, 16S = ", paste(gene_bounds[is_16S], collapse=", "), "\n"
+		"DNA, mitochondrial = ", paste(gene_bounds[is_16S+is_COI+is_mt], collapse=", "), "\n"
 		,"DNA, 18S = ", paste(gene_bounds[is_18S], collapse=", "), "\n"
 		,"DNA, 28S = ", paste(gene_bounds[is_28S], collapse=", "), "\n"
-		,"DNA, COI = ", paste(gene_bounds[is_COI], collapse=", "), "\n"
 		,"DNA, othergenes = ", paste(gene_bounds[is_nonfocal], collapse=", "), "\n"
 		), 
 		file='seqs_final/partition.txt')
@@ -133,5 +143,6 @@ CreatePartitionFile <- function(dna_combined) {
 
 RunRaxml <- function(...) {
 	setwd("seqs_final")
-	system('raxmlHPC -T 4 -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 -s combined.seq -q partition.txt -n combined')
+	system('raxmlHPC -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 -s combined.seq -q partition.txt -n combined')
+	setwd("..")
 }
