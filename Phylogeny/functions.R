@@ -82,13 +82,13 @@ ProcessSequencesByGeneSingle <- function(inputs) {
 	system("rm seqs_processed/*.fasta")
 	for (i in seq_along(inputs)) {
 		if(!grepl("(oxidase|16s)", inputs[i])) {
-			system(paste0('mafft --adjustdirectionaccurately --auto seqs_raw/', inputs[i], ' > seqs_processed/Aligned_', inputs[i]))
+			system(paste0('mafft --thread 3 --adjustdirectionaccurately --auto seqs_raw/', inputs[i], ' > seqs_processed/Aligned_', inputs[i]))
 		} else {
 		  mtDNA <- c(mtDNA, inputs[i])
 		}
 	}
-	system2("cat", args = paste("seqs_direct_download/spongemtgenomes.fasta", mtDNA), stdout = "seqs_raw/Concat_mtDNA.fasta")
-	system(paste0('mafft --adjustdirectionaccurately --auto seqs_raw/Concat_mtDNA.fasta > seqs_processed/Aligned_mtDNA.fasta'))
+	system2("cat", args = paste("seqs_direct_download/spongemtgenomes.fasta", paste0("seqs_raw/", mtDNA)), stdout = "seqs_raw/Concat_mtDNA.fasta")
+	system(paste0('mafft --thread 3 --auto seqs_raw/Concat_mtDNA.fasta > seqs_processed/Aligned_mtDNA.fasta'))
 
 
 	outputs <- list.files(path="seqs_processed", pattern="Aligned.*.fasta")
