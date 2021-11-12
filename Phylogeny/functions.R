@@ -109,7 +109,16 @@ RemoveGappy <- function(inputs) {
 }
 
 ConcatenateAll <- function(dna_combined) {
-	phangorn::write.phyDat(concatenate(dna_combined), file='seqs_final/combined.seq')
+	concat_dna <- concatenate(dna_combined)
+	rownames(concat_dna) <- gsub(" (voucher|isolate) .*", "", gsub("assembly, .*", "", gsub(" genome ", "", gsub(" complete.*", "", gsub("^ +", "", gsub("^N ", "", gsub(" mitochondri.*", "", gsub("\\d", "", gsub("\\.\\d", "", gsub("\\w\\w\\d\\d", "", rownames(concat_dna)))))))))))
+	concat_dna <- concat_dna[!grepl("\\.", rownames(concat_dna)),]
+	concat_dna <- concat_dna[!grepl("Plakina_finispinata", rownames(concat_dna)),] # has no data
+	concat_dna <- concat_dna[!grepl("UNVERIFIED", rownames(concat_dna)),]
+	concat_dna <- concat_dna[!grepl("^cf_", rownames(concat_dna)),]
+	concat_dna <- concat_dna[!grepl("_sp_", rownames(concat_dna)),]
+	rownames(concat_dna) <- gsub(" ", "_", rownames(concat_dna))
+	concat_dna <- concat_dna[!duplicated(rownames(concat_dna)),]
+	phangorn::write.phyDat(concat_dna, file='seqs_final/combined.seq')
 	
 }
 
@@ -132,7 +141,7 @@ CreatePartitionFile <- function(dna_combined) {
 	is_mt <- grepl("mtDNA", genenames)
 	is_nonfocal <- ((is_16S+is_18S+is_28S+is_COI+is_mt)!=1)
 	cat(paste0(
-		"DNA, mitochondrial = ", paste(gene_bounds[is_16S+is_COI+is_mt], collapse=", "), "\n"
+		"DNA, mitochondrial = ", paste(gene_bounds[(is_16S+is_COI+is_mt)==1], collapse=", "), "\n"
 		,"DNA, 18S = ", paste(gene_bounds[is_18S], collapse=", "), "\n"
 		,"DNA, 28S = ", paste(gene_bounds[is_28S], collapse=", "), "\n"
 		,"DNA, othergenes = ", paste(gene_bounds[is_nonfocal], collapse=", "), "\n"
@@ -143,6 +152,7 @@ CreatePartitionFile <- function(dna_combined) {
 
 RunRaxml <- function(...) {
 	setwd("seqs_final")
-	system('raxmlHPC -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 -s combined.seq -q partition.txt -n combined')
+	system('raxmlHPC -T 4 -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 -s combined.seq -q partition.txt -n combined')
 	setwd("..")
+	return(TRUE)
 }
