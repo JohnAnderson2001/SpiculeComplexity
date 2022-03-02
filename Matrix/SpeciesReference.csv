@@ -21,7 +21,7 @@ Tretodictyum tubulosum,Hex,no,subhexactins,Extant,"mapress,+zt01721p064"
 Hexactinella carolinensis,Hex,yes ,paper may not adequately describe spicule variation,Extant,"mapress,+zt01721p064"
 Pheronemoides crustiformis,Hex,no,monaxons may be diactins,Extant,[18759866 - Contributions to Zoology] Phylogeny of two new pheronematid sponges from the Caroline Seamount and South China Sea
 Semperella jiaolongae,Hex,yes ,number of pinules unclear,Extant,Gongetal2015-zt04034p192
-Saccocolyx microhexactin,Hex,yes ,no,Extant,Gongetal2015-zt04034p192
+Saccocalyx microhexactin,Hex,yes ,no,Extant,Gongetal2015-zt04034p192
 Platylistrum subviridum,Hex,yes ,uncinates may be microscleres,Extant,"kkochar,+zt04171p574A"
 Poliopogon canaliculatus,Hex,no,no,Extant,"kkochar,+zt04171p574A"
 Conorete pourtalesi,Hex,yes ,maybe collapse tylo/subtylo scopules,Extant,zoj12138
@@ -92,7 +92,7 @@ Crumillospongia frondosa,Demo,yes ,Cambrian demosponge,Fossil,BG_2011_86_3_641
 Ptilispongia maotianshanensis,Demo,no,Cambrian demosponge,Fossil,1-s2.0-S0031018213003660-main
 Ischnspongia dendritica,Demo,yes ,Cambrian demosponge; all spicules diactins?,Fossil,1-s2.0-S0031018213003660-main
 Hamptonia chengjiangensis,Demo,no,spicules in radiating pattern,Fossil,1-s2.0-S0031018213003660-main
-Cytospongia globosa,Hex,yes ,stauractins may be triactins,Fossil,1-s2.0-S0031018213003660-main
+Cystospongia globosa,Hex,yes ,stauractins may be triactins,Fossil,1-s2.0-S0031018213003660-main
 Valospongia gigantis,Hex,yes ,triaxons and stauractins may be giant,Fossil,1-s2.0-S0031018213003660-main
 Conciliospongia anjiensis,Demo-Hex,yes ,link between demosponges and hexactinellids,Fossil,s41598-017-05604-6
 Stereodictyum orthoplectum,Hex,yes ,undefined monaxons,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview
@@ -103,5 +103,5 @@ Stromatidium typicale,Hex,no,spicules fuse into rigid layers; architecture uniqu
 Becksia soekelandi,Hex,yes ,anchors?,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview
 Plectroninia halli,Calcarea,yes ,unknown regular/sagittalness of tetracts and tripods,Fossil,document(5)(1)
 Bactronella australis,Calcarea,no,only one type of tetractine?,Fossil,document(5)(1)
-Tetrocalia pezica,Calcarea,no,types of triactines and tetractines unkown,Fossil,document(5)(1)
+Tretocalia pezica,Calcarea,no,types of triactines and tetractines unkown,Fossil,document(5)(1)
 Monoplectroninia malonei,Calcarea,no,one type of tetractine only,Fossil,document(5)(1)
