@@ -11,19 +11,19 @@ Tornotes,1,0,0,0,1,Spear end; perhaps not collapsible,No
 Uncinates,0,1,0,0,0,Distinct hook shape -- probably not collapsible,No
 Clavule,0,1,0,0,0,Distinct,No
 Strongyloscopule,0,1,0,0,0,Distinct,No
-Scopule (acantho),0,1,0,0,1,Collapse for robustness test,No
+Scopule (acantho),0,1,0,0,1,Other spicules defined as scopules have roughness and similar tines; can't justify this being a new type,To Scopule
 Scopule,0,1,0,0,0,,No
 Tyloscopule,0,1,0,0,0,,No
-Subtyloscopule,0,1,0,0,1,,
-Tylostyle,1,0,0,0,0,,
-Polytylote Tylostyles,1,0,0,0,1,,
-Centrotylote,1,1,0,0,0,,
-Trichoxea,0,1,1,0,0,,
-Anchor,0,1,0,0,0,,
-Sceptres,0,1,0,0,0,,
-Exotyles,1,0,0,0,1,,
-Raphides,1,0,0,0,1,Two specimens but named in same paper - counted as apo,
-Tylostrongyle,1,0,0,0,1,named in same paper as the raphides and exotyles,
+Subtyloscopule,0,1,0,0,1,"Collapse for robustness test; Appear to have different position in sponge, so may be unique features: To Tyloscopule",No
+Tylostyle,1,0,0,0,0,,No
+Polytylote Tylostyles,1,0,0,0,1,Collapse for robustness test; sponge has tylo and polytylo and unclear if there is a gradient between the two: To Tylostyle,No
+Centrotylote,1,1,0,0,0,,No
+Trichoxea,0,1,1,0,0,,No
+Anchor,0,1,0,0,0,,No
+Sceptres,0,1,0,0,0,,No
+Exotyles,1,0,0,0,1,Collapse for robustness test; but probably strange enough to be unique: To Styles?,No
+Raphides,1,0,0,0,1,Same paper as below apomorphies; keep due to strange lateral branches,No
+Tylostrongyle,1,0,0,0,1,Same paper; keep because distinct from tylostyles in that one end is round rather than pointed,No
 Anisostrongyles,1,0,0,0,1,named in same paper as last two,
 Strongyloxeas,1,0,0,0,1,named in same paper,
 Undefined Monaxon,1,1,0,0,0,Mostly just in fossils: should this be collapsed with another monaxon just for the sake of the phylogeny?,To Oxeas
