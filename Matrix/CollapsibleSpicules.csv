@@ -24,15 +24,15 @@ Sceptres,0,1,0,0,0,,No
 Exotyles,1,0,0,0,1,Collapse for robustness test; but probably strange enough to be unique: To Styles?,No
 Raphides,1,0,0,0,1,Same paper as below apomorphies; keep due to strange lateral branches,No
 Tylostrongyle,1,0,0,0,1,Same paper; keep because distinct from tylostyles in that one end is round rather than pointed,No
-Anisostrongyles,1,0,0,0,1,named in same paper as last two,
-Strongyloxeas,1,0,0,0,1,named in same paper,
+Anisostrongyles,1,0,0,0,1,Same paper; Collapse for robustness test; very very similar to oxeas but not quite as sharp; To Oxeas,No
+Strongyloxeas,1,0,0,0,1,Same paper; I can't distinguish from Styles but authors can? Collapse for robustness test: To Styles,No
 Undefined Monaxon,1,1,0,0,0,Mostly just in fossils: should this be collapsed with another monaxon just for the sake of the phylogeny?,To Oxeas
-Diactin,1,1,1,0,0,,
-Giant Diactine,0,0,1,0,0,,
-Tuning Fork,0,0,1,0,1,,
+Diactin,1,1,1,0,0,,No
+Giant Diactine,0,0,1,0,0,,No
+Tuning Fork,0,0,1,0,1,Definitely distinct; looks like actual tuning fork,No
 Chiactine,0,0,1,0,1,All named in one paper - counted as apo,
-"Triactines, regular, sharp tips",0,1,1,0,0,,
-"Triactines, sagittal, sharp tips",0,0,1,0,0,,
+"Triactines, regular, sharp tips",0,1,1,0,0,,No
+"Triactines, sagittal, sharp tips",0,0,1,0,0,,No
 "Triactines (sagittal, blunt, curved)",0,0,1,0,0,,
 Giant Triactines (regular),0,0,1,0,1,Same paper - counted as apo,
 Giant Triactines (sagittal),0,0,1,0,0,,
