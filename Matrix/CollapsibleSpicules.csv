@@ -33,17 +33,17 @@ Tuning Fork,0,0,1,0,1,Definitely distinct; looks like actual tuning fork,No
 Chiactine,0,0,1,0,1,All named in one paper - counted as apo,
 "Triactines, regular, sharp tips",0,1,1,0,0,,No
 "Triactines, sagittal, sharp tips",0,0,1,0,0,,No
-"Triactines (sagittal, blunt, curved)",0,0,1,0,0,,
-Giant Triactines (regular),0,0,1,0,1,Same paper - counted as apo,
-Giant Triactines (sagittal),0,0,1,0,0,,
-"Tetractines, regular, sharp tips",0,0,1,0,0,,
-"Tetractines, sagittal, sharp tips",0,0,1,0,0,,
-"Tetractines, sagittal, curved, sharp",0,0,1,0,1,,
-"Tetractines, tubar",0,0,1,0,1,,
-"Tetractines, regular, spined apex",0,0,1,0,0,,
-"Tetractines, waxy apex",0,0,1,0,1,Same paper - counted as apo,
-Giant Tetractines (regular),0,0,1,0,1,Same paper - counted as apo,
-Giant Tetractines (sagittal),0,0,1,0,1,,
+"Triactines (sagittal, blunt, curved)",0,0,1,0,0,Don't collapse but redo Heteropia minor and Leucandra falakra because they don't have these spicules,No
+Giant Triactines (regular),0,0,1,0,1,Same paper - counted as apo,No
+Giant Triactines (sagittal),0,0,1,0,0,,No
+"Tetractines, regular, sharp tips",0,0,1,0,0,,No
+"Tetractines, sagittal, sharp tips",0,0,1,0,0,,No
+"Tetractines, sagittal, curved, sharp",0,0,1,0,1,These don't seem that distinct; probably collapsible to second sagittal tetractines,To 2nd sagittal tetractines
+"Tetractines, tubar",0,0,1,0,1,"Tubar appears to be a descriptor of location, not spicule type","To Tetractines, regular, sharp tips"
+"Tetractines, regular, spined apex",0,0,1,0,0,,No
+"Tetractines, waxy apex",0,0,1,0,1,Collapse for robustness test; consider redoing Pericharax orientalis; To 2nd regular tetractines,No
+Giant Tetractines (regular),0,0,1,0,1,Same paper - counted as apo,No
+Giant Tetractines (sagittal),0,0,1,0,1,,No
 "Tripods (regular, sharp tips)",0,0,1,0,0,,
 "Tripods (sagittal, sharp tips)",0,0,1,0,0,,
 Stauractins,0,1,0,0,0,,
