@@ -6,7 +6,7 @@ Styles,1,0,0,0,0,,No
 Subtylostyles,1,0,0,0,0,,No
 Tylotes,0,0,0,0,0,Type never used!,No
 Acanthostyles,1,0,0,0,0,Only 2 species,No
-Acanthotylostyles,0,1,0,0,1,Distinct,
+Acanthotylostyles,0,1,0,0,1,Distinct,No
 Tornotes,1,0,0,0,1,Spear end; perhaps not collapsible,No
 Uncinates,0,1,0,0,0,Distinct hook shape -- probably not collapsible,No
 Clavule,0,1,0,0,0,Distinct,No
@@ -30,7 +30,7 @@ Undefined Monaxon,1,1,0,0,0,Mostly just in fossils: should this be collapsed wit
 Diactin,1,1,1,0,0,,No
 Giant Diactine,0,0,1,0,0,,No
 Tuning Fork,0,0,1,0,1,Definitely distinct; looks like actual tuning fork,No
-Chiactine,0,0,1,0,1,All named in one paper - counted as apo,
+Chiactine,0,0,1,0,1,All named in one paper - counted as apo,No
 "Triactines, regular, sharp tips",0,1,1,0,0,,No
 "Triactines, sagittal, sharp tips",0,0,1,0,0,,No
 "Triactines (sagittal, blunt, curved)",0,0,1,0,0,Don't collapse but redo Heteropia minor and Leucandra falakra because they don't have these spicules,No
@@ -44,32 +44,32 @@ Giant Triactines (sagittal),0,0,1,0,0,,No
 "Tetractines, waxy apex",0,0,1,0,1,Collapse for robustness test; consider redoing Pericharax orientalis; To 2nd regular tetractines,No
 Giant Tetractines (regular),0,0,1,0,1,Same paper - counted as apo,No
 Giant Tetractines (sagittal),0,0,1,0,1,,No
-"Tripods (regular, sharp tips)",0,0,1,0,0,,
-"Tripods (sagittal, sharp tips)",0,0,1,0,0,,
-Stauractins,0,1,0,0,0,,
-Pentactins,0,1,0,0,0,,
-Acanthopentactins,0,1,0,0,0,,
-Pentactins (Irregular),0,1,0,0,0,,
-Pinule,0,1,0,0,0,,
-Hexactins (regular),0,1,0,0,0,Also found in Conciliospongia fossil,
-Hexactins (Irregular),0,1,0,0,0,,
-Subhexactins,0,1,0,0,0,,
-Pinular Hexactin,0,1,0,0,0,,
-"Acanthohexactins, regular",0,1,0,0,0,,
-"Acanthohexactins, irregular",0,1,0,0,1,Species doesn't also have regular acanthohexactins,
-Spheres,0,1,0,0,1,,
-Spherules,0,0,1,0,1,,
-Candelabra,0,0,0,1,1,,
-Diods,0,0,0,1,0,"For all homoscleromorphs, consider collapsing or leaving all as unique spicules due to size weirdness",
-Triods,0,0,0,1,0,,
-Calthrops,0,0,0,1,0,,
-Pseudolophose spicules,0,0,0,1,1,,
-Monolophose triods,0,0,0,1,1,,
-Dilophose Triods,0,0,0,1,1,,
-Monolophose Calthrops,0,0,0,1,1,,
-Dilophose Calthrops,0,0,0,1,1,,
-Trilophose Calthrops,0,0,0,1,1,,
-Tetralophose Calthrops,0,0,0,1,1,A lot of these apomorphies come from just one species,
+"Tripods (regular, sharp tips)",0,0,1,0,0,Seem to be distinguished from triactines by elevated center,No
+"Tripods (sagittal, sharp tips)",0,0,1,0,0,,No
+Stauractins,0,1,0,0,0,,No
+Pentactins,0,1,0,0,0,,No
+Acanthopentactins,0,1,0,0,0,,No
+Pentactins (Irregular),0,1,0,0,0,,No
+Pinule,0,1,0,0,0,,No
+Hexactins (regular),0,1,0,0,0,Also found in Conciliospongia fossil,No
+Hexactins (Irregular),0,1,0,0,0,,No
+Subhexactins,0,1,0,0,0,Collapse for robustness test; to Pentactins,No
+Pinular Hexactin,0,1,0,0,0,,No
+"Acanthohexactins, regular",0,1,0,0,0,,No
+"Acanthohexactins, irregular",0,1,0,0,1,Species doesn't also have regular acanthohexactins,No
+Spheres,0,1,0,0,1,Distinct,No
+Spherules,0,0,1,0,1,Distinct,No
+Candelabra,0,0,0,1,1,Distinct,No
+Diods,0,0,0,1,0,"For all homoscleromorphs, consider collapsing or leaving all as unique spicules due to size weirdness",To Diactines
+Triods,0,0,0,1,0,"Look like triactines, except for size","To Triactines, regular, sharp"
+Calthrops,0,0,0,1,0,"Look like tetractines, except for size","To Tetractines, regular, sharp tips"
+Pseudolophose spicules,0,0,0,1,1,All lophose spicules seem very derived and bear no resemblance to spicules in other classes,No
+Monolophose triods,0,0,0,1,1,,No
+Dilophose Triods,0,0,0,1,1,,No
+Monolophose Calthrops,0,0,0,1,1,,No
+Dilophose Calthrops,0,0,0,1,1,,No
+Trilophose Calthrops,0,0,0,1,1,,No
+Tetralophose Calthrops,0,0,0,1,1,A lot of these apomorphies come from just one species,No
 2nd Oxeas,,,,,,"Second spicules will be collapsed along with the first spicules, as necessary",
 2nd Tylostyle,,,,,,,
 2nd Subtylostyle,,,,,,,
@@ -98,5 +98,5 @@ Tetralophose Calthrops,0,0,0,1,1,A lot of these apomorphies come from just one s
 3rd Triactine,,,,,,,
 3rd Pinule,,,,,,,
 4th Uncinates,,,,,,,
-Oxypentactins,0,1,0,0,1,,
-Oxyhexactins,0,1,0,0,1,,
+Oxypentactins,0,1,0,0,1,Strange mesosclere,No
+Oxyhexactins,0,1,0,0,1,Strange mesosclere,No
