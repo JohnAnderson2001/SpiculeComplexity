@@ -1,0 +1,24 @@
+FOR FIRST ANALYSIS COLLAPSE:
+	Scopule (acantho) -> Scopule
+	Undefined Monaxon -> Oxeas
+	Tetractines, sagittal, curved, sharp -> 2nd sagittal tetractines
+	Tetractines, tubar -> Tetractines, regular, sharp tips
+	Diods -> Diactines
+	Triods -> Triactines, regular, sharp
+	Calthrops -> Tetractines, regular, sharp tips
+	2nd Diods -> 2nd Diactin
+	2nd Triods -> 2nd Regular Triactines
+	2nd Calthrops -> 2nd Regular Tetractines
+
+FOR FIRST ROBUSTNESS ANAYLSIS COLLAPSE:
+	All of the above plus:
+	Subtyloscopule -> Scopule
+	Polytylote Tylostyles -> Tylostyle
+	Exotyles -> Styles
+	Anisostrongyles -> Oxeas
+	Strongyloxeas -> Styles
+	Tetractines, waxy apex -> 2nd Regular Tetractines
+	Subhexactins -> Pentactins
+	
+	
+	
