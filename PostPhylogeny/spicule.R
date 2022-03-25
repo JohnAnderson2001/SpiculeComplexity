@@ -2,6 +2,7 @@ library(ape)
 library(geiger)
 library(phytools)
 library(datelife) #github
+library(rotl)
 
 phy <- ape::read.tree("~/Downloads/raxml.tre")[[1]]
 chars <- read.csv("/Users/bomeara/Documents/MyDocuments/GitClones/SpiculeComplexity/Matrix/CharacterMatrix.csv")
