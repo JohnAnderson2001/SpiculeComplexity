@@ -1,107 +1,107 @@
-﻿Species,Type,Fuzziness?,Interesting bits,Folder,Paper
-Tethytimea tylota,Demo,no,no,Extant,zookeys-680-105
-Rhabdastrella distincta,Demo,no,no,Extant,zookeys-680-105
-Amphimedon anastomosa,Demo,no,no,Extant,zookeys-680-105
-Asbestopluma hypogea,Demo,yes ,carnivore,Extant,VaceletBoury-Esnault1996
-Ascandra spalatensis,Calcarea,yes ,no,Extant,301-Article Text-1584-1-10-20160302
-Clathrina primordialis,Calcarea,no,one spicule type but great size variation,Extant,301-Article Text-1584-1-10-20160302
-Borojevia croatica,Calcarea,yes ,no,Extant,301-Article Text-1584-1-10-20160302
-Farrea bowerbanki,Hex,no,Some vestigial rays noted,Extant,boury-esnault_et_al_2017hexactinellida
-Tretodictyum reiswigi,Hex,no,no,Extant,boury-esnault_et_al_2017hexactinellida
-Haljalaspongia inaudita,Hex,yes ,distinct layers,Fossil,SG143_001-014
-Leucandra falakra,Calcarea,yes ,Giant spicules; pairing,Extant,301-Article Text-1584-1-10-20160302
-Hymedesmia anatoliensis,Demo,no,no,Extant,zoo-39-4-2-1312-40
-Neofibularia chinensis,Demo,no,no,Extant,"Pulitzer-Finali,_1982b"
-Amphimedon chloros,Demo,yes ,no,Extant,9875
-Niphates rowi,Demo,no,no,Extant,9875
-Petrosia spheroida,Demo,no,spherical,Extant,"Tanita, 1967"
-Clathria collosclera,Demo,no,no,Extant,"vanSoest,2009"
-Pheronema amphorae,Hex,yes ,"""mesosclere"" category",Extant,"Reiswig,1992"
-Tretodictyum tubulosum,Hex,no,subhexactins,Extant,"mapress,+zt01721p064"
-Hexactinella carolinensis,Hex,yes ,paper may not adequately describe spicule variation,Extant,"mapress,+zt01721p064"
-Pheronemoides crustiformis,Hex,no,monaxons may be diactins,Extant,[18759866 - Contributions to Zoology] Phylogeny of two new pheronematid sponges from the Caroline Seamount and South China Sea
-Semperella jiaolongae,Hex,yes ,number of pinules unclear,Extant,Gongetal2015-zt04034p192
-Saccocalyx microhexactin,Hex,yes ,no,Extant,Gongetal2015-zt04034p192
-Platylistrum subviridum,Hex,yes ,uncinates may be microscleres,Extant,"kkochar,+zt04171p574A"
-Poliopogon canaliculatus,Hex,no,no,Extant,"kkochar,+zt04171p574A"
-Conorete pourtalesi,Hex,yes ,maybe collapse tylo/subtylo scopules,Extant,zoj12138
-Verrucocoeloidea liberatorii,Hex,no,no,Extant,zoj12138
-Dictyoplax lecus,Hex,yes ,no,Extant,zoj12138
-Poliopogon amadou,Hex,yes ,mesouncinates,Extant,Castello-Branco_et_al_2020_peerj
-Bolosoma perezi,Hex,yes ,diactins,Extant,Castello-Branco_et_al_2020_peerj
-Chonelasma choanoides,Hex,yes ,3 scopules,Extant,1-s2.0-S0967064504001626-main
-Holascus pseudostellatus,Hex,yes ,pinular hexactins,Extant,1-s2.0-S0967064504001626-main
-Bathydorus poculum,Hex,no,no,Extant,ZK_article_63307_en_1
-Nubes poculiformis,Hex,no,no,Extant,ZK_article_63307_en_1
-Scyphidium australiense,Hex,no,spheres as megascleres,Extant,ZK_article_63307_en_1
-Eurete atlantica,Hex,no,no,Extant,axonomy of Euretidae Porifera Hexactinellida Hexactinosida of Campos Basin southwestern Atlantic with a description of a new species
-Periphragella antarctica,Hex,no,no,Extant,1-s2.0-S0967064504001626-main
-Corticium vaceleti,Homoscleromorph,no,no,Extant,"kkochar,+zt04466p038A"
-Plakortis ruetzleri,Homoscleromorph,no,no,Extant,"kkochar,+zt04466p038A"
-Plakinastrella nicoleae,Homoscleromorph,no,no,Extant,"kkochar,+zt04466p038A"
-Plakinastrella pseudolopha,Homoscleromorph,yes ,no,Extant,"kkochar,+zt04466p038A"
-Plakinastrella osculifera,Homoscleromorph,no,no,Extant,"kkochar,+zt04466p038A"
-Plakina finispinata,Homoscleromorph,no,no,Extant,"kkochar,+zt04466p038A"
-Plectroninia celtica,Calcarea,yes ,might be Plectronina halli,Extant,Könnecker-Freiwald2005_Article_PlectroniniaCelticaNSpCalcarea
-Achramorpha nivalis,Calcarea,yes ,chiactines,Extant,"kkochar,+zt04615p251A"
-Megapogon raripilus,Calcarea,no,diactins might be styles,Extant,"kkochar,+zt04615p251A"
-Sarsinella karasikensis,Calcarea,no,no,Extant,"kkochar,+zt04615p251A"
-Arthuria tenuipilosa,Calcarea,no,diactins might be styles,Extant,"kkochar,+zt03951p105A"
-Ernstia indonesiae,Calcarea,no,diactins might be styles,Extant,"kkochar,+zt03951p105A"
-Burtonulla sibogae,Calcarea,no,no,Extant,"kkochar,+zt03951p105A"
-Leucaltis nodusgordii,Calcarea,no,Giant spicules; pairing,Extant,"kkochar,+zt03951p105A"
-Ascaltis angusta,Calcarea,no,no,Extant,"kkochar,+zt03951p105A"
-Leucascus flavus,Calcarea,no,no,Extant,"kkochar,+zt03951p105A"
-Ascoleucetta sagittata,Calcarea,no,no,Extant,"kkochar,+zt03951p105A"
-Leucetta chagosensis,Calcarea,yes ,no,Extant,"kkochar,+zt03951p105A"
-Pericharax orientalis,Calcarea,no,no,Extant,"kkochar,+zt03951p105A"
-Lelapiella sphaerulifera,Calcarea,yes ,diactins and spherules may be microscleres,Extant,"kkochar,+zt03951p105A"
-Anamixilla torresi,Calcarea,no,tetractines have very large size range,Extant,"kkochar,+zt03951p105A"
-Uteopsis argentea,Calcarea,yes ,no,Extant,"kkochar,+zt03951p105A"
-Grantessa borojevici,Calcarea,yes ,no,Extant,"kkochar,+zt03951p105A"
-Heteropia minor,Calcarea,yes ,no,Extant,"kkochar,+zt03951p105A"
-Vosmaeropsis grisea,Calcarea,no,giant diactines,Extant,"kkochar,+zt03951p105A"
-Amphoriscus semoni,Calcarea,no,giant tetractines,Extant,"kkochar,+zt03951p105A"
-Leucilla australiensis,Calcarea,no,two types of giant tetractine,Extant,"kkochar,+zt03951p105A"
-Halichondria longioxea,Demo,no,no,Fossil,fia0241-3_043
-Axociella ongulensis,Demo,no,no,Fossil,fia0241-3_043
-Cymbastela cantharella,Demo,no,no,Extant,document(5)
-Reniochalina condylia,Demo,yes ,may only be one spicule with shape variation,Extant,document(5)
-Axinella carteri,Demo,no,no,Extant,document(5)
-Phakellia pulcherrima,Demo,no,no,Extant,document(5)
-Stylissa flabelliformis,Demo,no,no,Extant,document(5)
-Myrmekioderma granulata,Demo,no,no,Extant,document(5)
-Higginsia anfractuosa,Demo,no,no,Extant,document(5)
-Cliona californiana,Demo,no,polytylote tylostyles,Extant,"kkochar,+zt03823p084A"
-Cliona lobata,Demo,no,spiraster microscleres,Extant,"kkochar,+zt03823p084A"
-Pione gibraltarensis,Demo,no,spiraster microscleres,Extant,"kkochar,+zt03823p084A"
-Polymastia kurilensis,Demo,no,unnamed spicule; classified as raphides,Extant,"kkochar,+zt03823p084A"
-Polymastia pachymastia,Demo,no,no,Extant,"kkochar,+zt03823p084A"
-Radiella endeavourensis,Demo,no,no,Extant,"kkochar,+zt03823p084A"
-Sphaerotylus raphidophora,Demo,no,exotyles and raphides,Extant,"kkochar,+zt03823p084A"
-Tentorium semisuberites,Demo,no,sponge has long tendril,Extant,"kkochar,+zt03823p084A"
-Weberella perlucida,Demo,no,no,Extant,"kkochar,+zt03823p084A"
-Aaptos simplex,Demo,no,no,Extant,"kkochar,+zt03823p084A"
-Homaxinella amphispicula,Demo,no,no,Extant,"kkochar,+zt03823p084A"
-Prosuberites saanichensis,Demo,no,no,Extant,"kkochar,+zt03823p084A"
-Suberites concinnus,Demo,no,no,Extant,"kkochar,+zt03823p084A"
-Suberites latus,Demo,no,Specimens contained hermit crabs,Extant,"kkochar,+zt03823p084A"
-Tethya californiana,Demo,no,lots of microsclere types,Extant,"kkochar,+zt03823p084A"
-Darwinella muelleri,Demo,no,no,Extant,1089-Article Text-4687-3-10-20200910
-Crumillospongia frondosa,Demo,yes ,Cambrian demosponge,Fossil,BG_2011_86_3_641
-Ptilispongia maotianshanensis,Demo,no,Cambrian demosponge,Fossil,1-s2.0-S0031018213003660-main
-Ischnspongia dendritica,Demo,yes ,Cambrian demosponge; all spicules diactins?,Fossil,1-s2.0-S0031018213003660-main
-Hamptonia chengjiangensis,Demo,no,spicules in radiating pattern,Fossil,1-s2.0-S0031018213003660-main
-Cystospongia globosa,Hex,yes ,stauractins may be triactins,Fossil,1-s2.0-S0031018213003660-main
-Valospongia gigantis,Hex,yes ,triaxons and stauractins may be giant,Fossil,1-s2.0-S0031018213003660-main
-Conciliospongia anjiensis,Demo-Hex,yes ,link between demosponges and hexactinellids,Fossil,s41598-017-05604-6
-Stereodictyum orthoplectum,Hex,yes ,undefined monaxons,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview
-Hintzespongia bilamina,Hex,yes ,two-layered wall,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview
-Brachiospongia digitata,Hex,yes ,no,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview
-Stioderma coscinum,Hex,yes ,anchors?,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview
-Stromatidium typicale,Hex,no,spicules fuse into rigid layers; architecture unique in hexes,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview
-Becksia soekelandi,Hex,yes ,anchors?,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview
-Plectroninia halli,Calcarea,yes ,unknown regular/sagittalness of tetracts and tripods,Fossil,document(5)(1)
-Bactronella australis,Calcarea,no,only one type of tetractine?,Fossil,document(5)(1)
-Tretocalia pezica,Calcarea,no,types of triactines and tetractines unkown,Fossil,document(5)(1)
-Monoplectroninia malonei,Calcarea,no,one type of tetractine only,Fossil,document(5)(1)
+﻿Species,Type,Fuzziness?,Interesting bits,Folder,Paper,MinAgeMYA,MaxAgeMYA
+Tethytimea tylota,Demo,no,no,Extant,zookeys-680-105,0,0
+Rhabdastrella distincta,Demo,no,no,Extant,zookeys-680-105,0,0
+Amphimedon anastomosa,Demo,no,no,Extant,zookeys-680-105,0,0
+Asbestopluma hypogea,Demo,yes ,carnivore,Extant,VaceletBoury-Esnault1996,0,0
+Ascandra spalatensis,Calcarea,yes ,no,Extant,301-Article Text-1584-1-10-20160302,0,0
+Clathrina primordialis,Calcarea,no,one spicule type but great size variation,Extant,301-Article Text-1584-1-10-20160302,0,0
+Borojevia croatica,Calcarea,yes ,no,Extant,301-Article Text-1584-1-10-20160302,0,0
+Farrea bowerbanki,Hex,no,Some vestigial rays noted,Extant,boury-esnault_et_al_2017hexactinellida,0,0
+Tretodictyum reiswigi,Hex,no,no,Extant,boury-esnault_et_al_2017hexactinellida,0,0
+Haljalaspongia inaudita,Hex,yes ,distinct layers,Fossil,SG143_001-014,455.8,460.9
+Leucandra falakra,Calcarea,yes ,Giant spicules; pairing,Extant,301-Article Text-1584-1-10-20160302,0,0
+Hymedesmia anatoliensis,Demo,no,no,Extant,zoo-39-4-2-1312-40,0,0
+Neofibularia chinensis,Demo,no,no,Extant,"Pulitzer-Finali,_1982b",0,0
+Amphimedon chloros,Demo,yes ,no,Extant,9875,0,0
+Niphates rowi,Demo,no,no,Extant,9875,0,0
+Petrosia spheroida,Demo,no,spherical,Extant,"Tanita, 1967",0,0
+Clathria collosclera,Demo,no,no,Extant,"vanSoest,2009",0,0
+Pheronema amphorae,Hex,yes ,"""mesosclere"" category",Extant,"Reiswig,1992",0,0
+Tretodictyum tubulosum,Hex,no,subhexactins,Extant,"mapress,+zt01721p064",0,0
+Hexactinella carolinensis,Hex,yes ,paper may not adequately describe spicule variation,Extant,"mapress,+zt01721p064",0,0
+Pheronemoides crustiformis,Hex,no,monaxons may be diactins,Extant,[18759866 - Contributions to Zoology] Phylogeny of two new pheronematid sponges from the Caroline Seamount and South China Sea,0,0
+Semperella jiaolongae,Hex,yes ,number of pinules unclear,Extant,Gongetal2015-zt04034p192,0,0
+Saccocalyx microhexactin,Hex,yes ,no,Extant,Gongetal2015-zt04034p192,0,0
+Platylistrum subviridum,Hex,yes ,uncinates may be microscleres,Extant,"kkochar,+zt04171p574A",0,0
+Poliopogon canaliculatus,Hex,no,no,Extant,"kkochar,+zt04171p574A",0,0
+Conorete pourtalesi,Hex,yes ,maybe collapse tylo/subtylo scopules,Extant,zoj12138,0,0
+Verrucocoeloidea liberatorii,Hex,no,no,Extant,zoj12138,0,0
+Dictyoplax lecus,Hex,yes ,no,Extant,zoj12138,0,0
+Poliopogon amadou,Hex,yes ,mesouncinates,Extant,Castello-Branco_et_al_2020_peerj,0,0
+Bolosoma perezi,Hex,yes ,diactins,Extant,Castello-Branco_et_al_2020_peerj,0,0
+Chonelasma choanoides,Hex,yes ,3 scopules,Extant,1-s2.0-S0967064504001626-main,0,0
+Holascus pseudostellatus,Hex,yes ,pinular hexactins,Extant,1-s2.0-S0967064504001626-main,0,0
+Bathydorus poculum,Hex,no,no,Extant,ZK_article_63307_en_1,0,0
+Nubes poculiformis,Hex,no,no,Extant,ZK_article_63307_en_1,0,0
+Scyphidium australiense,Hex,no,spheres as megascleres,Extant,ZK_article_63307_en_1,0,0
+Eurete atlantica,Hex,no,no,Extant,axonomy of Euretidae Porifera Hexactinellida Hexactinosida of Campos Basin southwestern Atlantic with a description of a new species,0,0
+Periphragella antarctica,Hex,no,no,Extant,1-s2.0-S0967064504001626-main,0,0
+Corticium vaceleti,Homoscleromorph,no,no,Extant,"kkochar,+zt04466p038A",0,0
+Plakortis ruetzleri,Homoscleromorph,no,no,Extant,"kkochar,+zt04466p038A",0,0
+Plakinastrella nicoleae,Homoscleromorph,no,no,Extant,"kkochar,+zt04466p038A",0,0
+Plakinastrella pseudolopha,Homoscleromorph,yes ,no,Extant,"kkochar,+zt04466p038A",0,0
+Plakinastrella osculifera,Homoscleromorph,no,no,Extant,"kkochar,+zt04466p038A",0,0
+Plakina finispinata,Homoscleromorph,no,no,Extant,"kkochar,+zt04466p038A",0,0
+Plectroninia celtica,Calcarea,yes ,might be Plectronina halli,Extant,Könnecker-Freiwald2005_Article_PlectroniniaCelticaNSpCalcarea,0,0
+Achramorpha nivalis,Calcarea,yes ,chiactines,Extant,"kkochar,+zt04615p251A",0,0
+Megapogon raripilus,Calcarea,no,diactins might be styles,Extant,"kkochar,+zt04615p251A",0,0
+Sarsinella karasikensis,Calcarea,no,no,Extant,"kkochar,+zt04615p251A",0,0
+Arthuria tenuipilosa,Calcarea,no,diactins might be styles,Extant,"kkochar,+zt03951p105A",0,0
+Ernstia indonesiae,Calcarea,no,diactins might be styles,Extant,"kkochar,+zt03951p105A",0,0
+Burtonulla sibogae,Calcarea,no,no,Extant,"kkochar,+zt03951p105A",0,0
+Leucaltis nodusgordii,Calcarea,no,Giant spicules; pairing,Extant,"kkochar,+zt03951p105A",0,0
+Ascaltis angusta,Calcarea,no,no,Extant,"kkochar,+zt03951p105A",0,0
+Leucascus flavus,Calcarea,no,no,Extant,"kkochar,+zt03951p105A",0,0
+Ascoleucetta sagittata,Calcarea,no,no,Extant,"kkochar,+zt03951p105A",0,0
+Leucetta chagosensis,Calcarea,yes ,no,Extant,"kkochar,+zt03951p105A",0,0
+Pericharax orientalis,Calcarea,no,no,Extant,"kkochar,+zt03951p105A",0,0
+Lelapiella sphaerulifera,Calcarea,yes ,diactins and spherules may be microscleres,Extant,"kkochar,+zt03951p105A",0,0
+Anamixilla torresi,Calcarea,no,tetractines have very large size range,Extant,"kkochar,+zt03951p105A",0,0
+Uteopsis argentea,Calcarea,yes ,no,Extant,"kkochar,+zt03951p105A",0,0
+Grantessa borojevici,Calcarea,yes ,no,Extant,"kkochar,+zt03951p105A",0,0
+Heteropia minor,Calcarea,yes ,no,Extant,"kkochar,+zt03951p105A",0,0
+Vosmaeropsis grisea,Calcarea,no,giant diactines,Extant,"kkochar,+zt03951p105A",0,0
+Amphoriscus semoni,Calcarea,no,giant tetractines,Extant,"kkochar,+zt03951p105A",0,0
+Leucilla australiensis,Calcarea,no,two types of giant tetractine,Extant,"kkochar,+zt03951p105A",0,0
+Halichondria longioxea,Demo,no,no,Fossil,fia0241-3_043,0.002,0.03
+Axociella ongulensis,Demo,no,no,Fossil,fia0241-3_043,0.002,0.03
+Cymbastela cantharella,Demo,no,no,Extant,document(5),0,0
+Reniochalina condylia,Demo,yes ,may only be one spicule with shape variation,Extant,document(5),0,0
+Axinella carteri,Demo,no,no,Extant,document(5),0,0
+Phakellia pulcherrima,Demo,no,no,Extant,document(5),0,0
+Stylissa flabelliformis,Demo,no,no,Extant,document(5),0,0
+Myrmekioderma granulata,Demo,no,no,Extant,document(5),0,0
+Higginsia anfractuosa,Demo,no,no,Extant,document(5),0,0
+Cliona californiana,Demo,no,polytylote tylostyles,Extant,"kkochar,+zt03823p084A",0,0
+Cliona lobata,Demo,no,spiraster microscleres,Extant,"kkochar,+zt03823p084A",0,0
+Pione gibraltarensis,Demo,no,spiraster microscleres,Extant,"kkochar,+zt03823p084A",0,0
+Polymastia kurilensis,Demo,no,unnamed spicule; classified as raphides,Extant,"kkochar,+zt03823p084A",0,0
+Polymastia pachymastia,Demo,no,no,Extant,"kkochar,+zt03823p084A",0,0
+Radiella endeavourensis,Demo,no,no,Extant,"kkochar,+zt03823p084A",0,0
+Sphaerotylus raphidophora,Demo,no,exotyles and raphides,Extant,"kkochar,+zt03823p084A",0,0
+Tentorium semisuberites,Demo,no,sponge has long tendril,Extant,"kkochar,+zt03823p084A",0,0
+Weberella perlucida,Demo,no,no,Extant,"kkochar,+zt03823p084A",0,0
+Aaptos simplex,Demo,no,no,Extant,"kkochar,+zt03823p084A",0,0
+Homaxinella amphispicula,Demo,no,no,Extant,"kkochar,+zt03823p084A",0,0
+Prosuberites saanichensis,Demo,no,no,Extant,"kkochar,+zt03823p084A",0,0
+Suberites concinnus,Demo,no,no,Extant,"kkochar,+zt03823p084A",0,0
+Suberites latus,Demo,no,Specimens contained hermit crabs,Extant,"kkochar,+zt03823p084A",0,0
+Tethya californiana,Demo,no,lots of microsclere types,Extant,"kkochar,+zt03823p084A",0,0
+Darwinella muelleri,Demo,no,no,Extant,1089-Article Text-4687-3-10-20200910,0,0
+Crumillospongia frondosa,Demo,yes ,Cambrian demosponge,Fossil,BG_2011_86_3_641,,
+Ptilispongia maotianshanensis,Demo,no,Cambrian demosponge,Fossil,1-s2.0-S0031018213003660-main,,
+Ischnspongia dendritica,Demo,yes ,Cambrian demosponge; all spicules diactins?,Fossil,1-s2.0-S0031018213003660-main,,
+Hamptonia chengjiangensis,Demo,no,spicules in radiating pattern,Fossil,1-s2.0-S0031018213003660-main,,
+Cystospongia globosa,Hex,yes ,stauractins may be triactins,Fossil,1-s2.0-S0031018213003660-main,,
+Valospongia gigantis,Hex,yes ,triaxons and stauractins may be giant,Fossil,1-s2.0-S0031018213003660-main,,
+Conciliospongia anjiensis,Demo-Hex,yes ,link between demosponges and hexactinellids,Fossil,s41598-017-05604-6,444,444
+Stereodictyum orthoplectum,Hex,yes ,undefined monaxons,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview,,
+Hintzespongia bilamina,Hex,yes ,two-layered wall,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview,,
+Brachiospongia digitata,Hex,yes ,no,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview,,
+Stioderma coscinum,Hex,yes ,anchors?,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview,,
+Stromatidium typicale,Hex,no,spicules fuse into rigid layers; architecture unique in hexes,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview,,
+Becksia soekelandi,Hex,yes ,anchors?,Fossil,Krautter2002_Chapter_FossilHexactinellidaAnOverview,,
+Plectroninia halli,Calcarea,yes ,unknown regular/sagittalness of tetracts and tripods,Fossil,document(5)(1),,
+Bactronella australis,Calcarea,no,only one type of tetractine?,Fossil,document(5)(1),,
+Tretocalia pezica,Calcarea,no,types of triactines and tetractines unkown,Fossil,document(5)(1),,
+Monoplectroninia malonei,Calcarea,no,one type of tetractine only,Fossil,document(5)(1),,
