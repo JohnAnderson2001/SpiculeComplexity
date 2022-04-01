@@ -72,3 +72,4 @@ genus_missing_in_ott_tree <- potential_missing_genera[!potential_missing_genera 
 genus_missing_in_raxml_tree <- potential_missing_genera[!potential_missing_genera %in% getGenus(phy$tip.label)]
 genera_missing_in_both_trees <- intersect(genus_missing_in_ott_tree, genus_missing_in_raxml_tree)
 genera_missing_in_taxonomy_tree_too <- genera_missing_in_both_trees[! genera_missing_in_both_trees %in% getGenus(ott_taxonomy_tree$tip.label)]
+
