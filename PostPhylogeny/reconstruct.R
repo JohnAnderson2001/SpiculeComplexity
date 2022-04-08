@@ -81,17 +81,39 @@ if(length(badones)>0) {
   ott_taxonomy_tree_no_duplicates <- ape::drop.tip(ott_taxonomy_tree_no_duplicates, tip=badones)
 }
 
-phy_no_duplicates <- phy
-phy_no_duplicates <- ape::drop.tip(phy_no_duplicates, tip=sequence(length(phy_no_duplicates$tip.label))[duplicated(ott_taxonomy_tree_no_duplicates$tip.label)])
-badones <- badLabels(phy_no_duplicates$tip.label)
-if(length(badones)>0) {
-  phy_no_duplicates <- ape::drop.tip(phy_no_duplicates, tip=badones)
+# phy_no_duplicates <- phy
+# phy_no_duplicates <- ape::drop.tip(phy_no_duplicates, tip=sequence(length(phy_no_duplicates$tip.label))[duplicated(ott_taxonomy_tree_no_duplicates$tip.label)])
+# badones <- badLabels(phy_no_duplicates$tip.label)
+# if(length(badones)>0) {
+#   phy_no_duplicates <- ape::drop.tip(phy_no_duplicates, tip=badones)
+# }
+
+#super <- phangorn::superTree(c(phy_no_duplicates, ott_taxonomy_tree_no_duplicates), trace=4)
+
+
+#cleaned_super <- geiger::treedata(super, complexity_vector)
+
+#phytools::contMap(ape::compute.brlen(cleaned_super$phy), cleaned_super$data)
+
+MakeConstraints <- function(fossil_phy) {
+	constraints <- data.frame()
+	unique_nodes <- unique(fossil_phy$edge[,1])
+	if(is.null(fossil_phy$node.label)) {
+		fossil_phy$node.label <- fossil_phy$edge[,1]
+	}
+	for (i in sequence(length(unique_nodes))) {
+		descendant_numbers <- phangorn::Descendants(fossil_phy, unique_nodes[i], type="tips")[[1]]
+		descendant_names <- fossil_phy$tip.label[descendant_numbers]
+		non_descendant_names <- fossil_phy$tip.label[!(sequence(fossil_phy$Ntip) %in% descendant_numbers)]
+		constraints <- rbind(constraints, data.frame(node=unique_nodes[1], name=fossil_phy$node.label[i], descendants=paste(descendant_names, collapse=" "), nondescendants=paste(non_descendant_names, collapse=" ")))
+	}	
+	constraints <- constraints[nchar(constraints$nondescendants)>0,]
+	return(constraints)
 }
 
-super <- phangorn::superTree(c(phy_no_duplicates, ott_taxonomy_tree_no_duplicates), trace=4)
-
-
-cleaned_super <- geiger::treedata(super, complexity_vector)
-
-phytools::contMap(ape::compute.brlen(cleaned_super$phy), cleaned_super$data)
+PrintConstraints <- function(constraints, output_file="constraints.nex") {
+	for (i in seq_along(constraints)) {
+		cat("\nconstraint backbone partial = ", constraints$descendants[i], " : ", constraints$nondescendants[i], file=ouptut_file, append=TRUE)
+	}
+}
 
