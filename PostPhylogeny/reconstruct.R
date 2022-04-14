@@ -25,7 +25,7 @@ complexity$Species <- gsub(" ", "_", complexity$Species)
 charSpecies <- complexity$Species
 charGenus <- getGenus(charSpecies)
 
-phy <- ape::read.tree("~/Downloads/raxml.tre")[[1]]
+phy <- ape::read.tree("raxml.tre")[[1]]
 
 paleodb_phy <- paleotree::makePBDBtaxonTree(paleotree::getCladeTaxaPBDB("Porifera"), rankTaxon = "species")
 
