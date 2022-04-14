@@ -142,9 +142,50 @@ MakeConstraints <- function(fossil_phy) {
 }
 
 PrintConstraints <- function(constraints, output_file="constraints.nex") {
+	cat("begin mrbayes;\n", file=output_file, append=FALSE)
+
 	for (i in sequence(nrow(constraints))) {
-		cat("\nconstraint backbone partial = ", constraints$descendants[i], " : ", constraints$nondescendants[i], file=output_file, append=ifelse(i==1, FALSE, TRUE))	
+		cat("\nconstraint backbone partial = ", constraints$descendants[i], " : ", constraints$nondescendants[i], file=output_file, append=TRUE)	
 	}
+	cat("\nend;\n", file=output_file, append=TRUE)
+}
+
+GenerateTipAges <- function(paleodb_ages) {
+	species <- subset(paleodb_ages, taxon_rank=="species")
+	return(species[, c("taxon_name", "lastapp_min_ma")])
+}
+
+PrintTipAges <- function(species_ages) {
+	cat("begin mrbayes;\ncalibrate ", file="tip_ages.nex", append=FALSE)
+	for (i in sequence(nrow(species_ages))) {
+		cat(gsub(" ", "_", species_ages$taxon_name[i]), " = Fixed(", species_ages$lastapp_min_ma[i], ")\n", file="tip_ages.nex", append=TRUE)	
+	}
+	cat("\n;	prset brlenspr=clock:uniform;
+	prset clockvarpr=igr;	
+	prset igrvarpr=exp(37.12);
+	prset clockratepr = lognorm(-7.08069,2.458582);
+	calibrate root=offsetexp(315,0.01234568);
+	calibrate holometabola_with_fossils=offsetexp(302,0.0106383);
+	prset topologypr=constraints(root, holometabola_with_fossils);
+	prset nodeagepr = calibrated;
+	end;", file="tip_ages.nex", append=TRUE)
+
+}
+
+PrintMrBayesBatchFile <- function() {
+	cat("begin mrbayes;
+	execute combined_for_mb.nex;
+	execute constraints.nex;
+	execute tip_ages.nex;
+	mcmcp temp=0.1 nchain=4 samplefreq=1000 printfr=100 nruns=2;
+	mcmcp filename=spongeDating;
+
+	mcmc ngen=20000000;	
+	end;", file="spongeDating.nex", append=FALSE)
+}
+
+RunMrBayes <- function(...) {
+	system("mb spongeDating.nex")
 }
 
 
