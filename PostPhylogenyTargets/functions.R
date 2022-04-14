@@ -69,7 +69,7 @@ getOTTTrees <- function(charSpecies, charGenus) {
 	return(list(missing_in_ott_tree=missing_in_ott_tree, genera_missing_in_ott_tree=genera_missing_in_ott_tree, ott_tree=ott_tree, ott_tree2=ott_tree2, ott_taxonomy_tree=ott_taxonomy_tree, ott_taxonomy_tree_no_duplicates=ott_taxonomy_tree_no_duplicates))
 }
 
-getCleanedRaxmlTreeData <- function(charSpecies, raxml_phy, charGenus, missing_in_ott_tree, complexity) {
+getCleanedRaxmlTreeData <- function(charSpecies, raxml_phy, charGenus, missing_in_ott_tree, complexity, genera_missing_in_ott_tree) {
 	phy <- raxml_phy
 	missing_in_raxml_tree <- charSpecies[!charSpecies %in% phy$tip.label]
 	genera_missing_in_raxml_tree <- charGenus[!charGenus %in% getGenus(phy$tip.label)]
@@ -134,7 +134,7 @@ MakeConstraints <- function(fossil_phy) {
 	for (i in sequence(length(unique_nodes))) {
 		descendant_numbers <- phangorn::Descendants(fossil_phy, unique_nodes[i], type="tips")[[1]]
 		descendant_names <- fossil_phy$tip.label[descendant_numbers]
-		non_descendant_names <- fossil_phy$tip.label[!(sequence(fossil_phy$Ntip) %in% descendant_numbers)]
+		non_descendant_names <- fossil_phy$tip.label[!(sequence(ape::Ntip(fossil_phy)) %in% descendant_numbers)]
 		constraints <- rbind(constraints, data.frame(node=unique_nodes[1], name=fossil_phy$node.label[i], descendants=paste(descendant_names, collapse=" "), nondescendants=paste(non_descendant_names, collapse=" ")))
 	}	
 	constraints <- constraints[nchar(constraints$nondescendants)>0,]
@@ -142,8 +142,10 @@ MakeConstraints <- function(fossil_phy) {
 }
 
 PrintConstraints <- function(constraints, output_file="constraints.nex") {
-	for (i in seq_along(constraints)) {
-		cat("\nconstraint backbone partial = ", constraints$descendants[i], " : ", constraints$nondescendants[i], file=ouptut_file, append=TRUE)
+	for (i in sequence(nrow(constraints))) {
+		cat("\nconstraint backbone partial = ", constraints$descendants[i], " : ", constraints$nondescendants[i], file=output_file, append=ifelse(i==1, FALSE, TRUE))	
 	}
 }
+
+
 
